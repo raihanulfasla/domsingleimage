@@ -1,0 +1,91 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM changeimage</title>
+</head>
+
+<body>
+
+
+
+    <style>
+        body {
+            background-color:green;
+            color: #F5F5F5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        button{
+            border: 1px dashed  #F5F5F5;
+            background-color: transparent;
+            color: #F5F5F5;
+            padding:10px;
+            transition: 0.2s;
+
+        }
+        button:hover{
+            background-color: #F5F5F5;
+            color: #0A2E54;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        img{
+            width: 100%;
+            max-height: 300px;
+            border-radius: 15px;
+            transition: 2s;
+        }
+
+    </style>
+    <h1>DOM Manipulation</h1>
+
+
+    <div class="" style="max-width: 500px;">
+
+        <div class="" style="text-align: center;">
+            <button id="button" >Change Image <b>src</b></button>
+        </div>
+        
+        <div class="" style="margin-top: 20px;">
+            <img id="image" src="singleimage.jpg" alt="">
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        document.getElementById("button")
+
+        console.log(document.getElementById("button"))
+
+        const button = document.getElementById("button");
+
+        document.getElementById("image");
+
+        console.log(document.getElementById("image"))
+
+         const image = document.getElementById("image");
+
+          button.addEventListener("click",function (params) 
+          {
+            image.src = 'image2.jpg'
+        }) 
+    
+
+
+    </script>
+
+</body>
+
+</html>
